@@ -7,6 +7,14 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+.textos-header h1 {
+  color: white; /* Cambia 'white' por el color que quieras */
+  font-size: 2.5em;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+
 
 h1,
 h2,
