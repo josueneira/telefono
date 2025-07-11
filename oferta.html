@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ofertas Especiales - Webroth</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #FFDEE9, #B5FFFC);
+      padding: 40px 20px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      color: #222;
+      margin-bottom: 30px;
+      font-size: 2.8rem;
+    }
+    .ofertas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .oferta-card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    .oferta-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+    .oferta-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .oferta-info {
+      padding: 15px;
+      text-align: center;
+    }
+    .oferta-info h2 {
+      margin: 0;
+      font-size: 1.4rem;
+      color: #444;
+    }
+    .oferta-info p {
+      margin: 8px 0;
+      color: #e63946;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    .btn {
+      background: #1d3557;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #457b9d;
+    }
+    a{
+      background: #ffffff;
+      color: #000000;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #00a933;
+    padding: 10px 0;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+      
+      
+    }
+  </style>
+</head>
+<body>
+
+  <h1>¡Ofertas Especiales!</h1>
+  
+
+  <div class="ofertas">
+    <div class="oferta-card">
+      <img src="img\s21.jpg" class="oferta-img" alt="Teléfono 1">
+      <div class="oferta-info">
+        <h2>Galaxy S21</h2>
+        <p>Antes 799 - Ahora599</p>
+        
+      </div>
+    </div>
+
+    <div class="oferta-card">
+      <img src="img\xiaomi.jpg" class="oferta-img" alt="Teléfono 2">
+      <div class="oferta-info">
+        <h2>Xiaomi Note 11</h2>
+        <p>Antes 299 - Ahora239</p>
+      </div>
+    </div>
+
+    <div class="oferta-card">
+      <img src="img\promo.jpg" class="oferta-img" alt="Teléfono 3">
+      <div class="oferta-info">
+       
+       
+      </div>
+        
+
+    </div>
+  </div>
+<a href="index.html">Inicio</a>
+
+</body>
+</html>

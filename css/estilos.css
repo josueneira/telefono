@@ -25,13 +25,7 @@ h6 {
     overflow: hidden;
 }
 
-.contenedor1 {
-    width: 90%;
-    max-width: 1500px;
-    margin: auto;
-    overflow: hidden;
-    padding: 60px 0;
-}
+
 
 h1 {
     font-size: 50px;
@@ -49,9 +43,9 @@ header::before {
 nav {
     width: 100%;
     height: 80px;
-    background: rgb(136, 153, 190);
+    background: rgb(255, 255, 255);
     border-bottom: 1px solid transparent;
-    box-shadow: 1px 1px 10px 0 rgba(201, 13, 13, 0.2);
+    box-shadow: 1px 1px 10px 0 rgba(47, 6, 210, 0.2);
     position: fixed;
     top: 0;
     z-index: 100;
@@ -103,8 +97,9 @@ nav {
 }
 
 .contenido-header {
+    background-color: #12087e;
     width: 100%;
-    height: 600px;
+    height: 400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -158,7 +153,7 @@ nav {
 /* About us */
 
 .about-us {
-    background: #c04848;
+    background: #ffffff;
 }
 
 .contenedor-articulo {
@@ -207,9 +202,14 @@ nav {
 }
 
 .articulo>a {
-    color: #5D6678;
-    font-weight: 400;
+   color: #000000;
     text-decoration: none;
+    display: inline-block;
+    border: 1px solid #00a933;
+    padding: 10px 0;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
 }
 
 .articulo>a:hover {
@@ -261,57 +261,27 @@ nav {
 /* Results */
 
 .results {
-    background: #2570ff;
+    background: #1fd037;
     padding-top: 30px;
+    
 }
 
 .conten-results {
+    
     display: flex;
     justify-content: space-evenly;
 }
 
-.numbers {
-    width: 60%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
 
-.numbers .number {
-    width: 45%;
-    background: rgba(255, 255, 255, .2);
-    color: #fff;
-    border-radius: 10px;
-    padding: 40px 35px;
-    margin-bottom: 20px;
-}
 
-.numbers .number h4 {
-    color: #fff;
-    font-size: 50px;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
 
-.numbers .number p {
-    color: #f2f5fc;
-    font-weight: 300;
-}
-
-.results-text {
-    width: 37%;
-}
 
 .results-text h4 {
     color: #fff;
     font-size: 40px;
 }
 
-.results-text p {
-    color: #fff;
-    font-weight: 300;
-    margin: 20px 0;
-}
+
 
 .results-text>a {
     color: #fff;
@@ -412,71 +382,9 @@ footer {
     margin-right: 5px;
 }
 
-.social-media i:hover {
-    color: #fff;
-    background-color: #1FDE82;
-    border-color: #1FDE82;
-}
 
 
-/* Breakpoints responsive */
 
-@media screen and (max-width:800px) {
-    .titulo {
-        font-size: 45px;
-    }
-    .contenido-header {
-        flex-direction: column;
-        justify-content: space-evenly;
-        height: 720px;
-    }
-    .contenido-header>img {
-        width: 400px;
-    }
-    .textos-header {
-        margin: 0;
-    }
-    /* About us */
-    .articulo {
-        width: 45%;
-    }
-    /* Questions */
-    .questions {
-        height: 720px;
-        justify-content: space-evenly;
-        flex-direction: column;
-    }
-    .questions>img {
-        width: 400px;
-    }
-    /* results */
-    .conten-results {
-        flex-direction: column-reverse;
-    }
-    .results-text>a {
-        margin-bottom: 60px;
-    }
-    .numbers {
-        width: 100%;
-        /* justify-content: space-between; */
-    }
-    .results-text {
-        width: 100%;
-    }
-    /* Services */
-    .services {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .box-skills {
-        margin: 0 0 40px 0;
-    }
-    .box-skills h4 {
-        width: 500px;
-    }
-    .services>img {
-        width: 400px;
-    }
     /* Footer */
     footer {
         justify-content: space-evenly;
@@ -485,7 +393,7 @@ footer {
         width: 40%;
         margin-bottom: 40px;
     }
-}
+
 
 @media screen and (max-width:600px) {
     .titulo {
@@ -546,13 +454,7 @@ footer {
     .results-text h4 {
         font-size: 35px;
     }
-    /* Services */
-    .services>img {
-        width: 200px;
-    }
-    .box-skills h4 {
-        width: 100%;
-    }
+   
     /* Footer */
     .partFooter {
         width: 95%;

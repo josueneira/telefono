@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Suscripción al Boletín</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      color: #fff;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px 50px;
+      border-radius: 15px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      width: 320px;
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 25px;
+      font-weight: 700;
+      font-size: 28px;
+      letter-spacing: 1.2px;
+    }
+    input[type="email"] {
+      width: 100%;
+      padding: 14px 15px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      outline: none;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      transition: box-shadow 0.3s ease;
+    }
+    input[type="email"]:focus {
+      box-shadow: 0 0 10px #ff6a00;
+      background-color: #fff;
+      color: #333;
+    }
+    button {
+      background-color: #ff6a00;
+      border: none;
+      padding: 14px 0;
+      width: 100%;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 5px 15px rgba(255, 106, 0, 0.4);
+    }
+    button:hover {
+      background-color: #ff8533;
+      box-shadow: 0 8px 25px rgba(255, 133, 51, 0.6);
+    }
+    .mensaje {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #00ff99;
+      font-weight: 600;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Suscríbete al boletín</h2>
+    <form id="formulario">
+      <input type="email" id="correo" placeholder="Tu correo electrónico" required />
+      <button type="submit">Suscribirme</button>
+    </form>
+    <div class="mensaje" id="mensaje">¡Listo! Ya estás suscrito. Serás redirigido...</div>
+  </div>
+
+  <script>
+    document.getElementById("formulario").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const correo = document.getElementById("correo").value;
+      if (correo) {
+        let suscriptores = JSON.parse(localStorage.getItem("suscriptores")) || [];
+        suscriptores.push(correo);
+        localStorage.setItem("suscriptores", JSON.stringify(suscriptores));
+      }
+      document.getElementById("mensaje").style.display = "block";
+
+      setTimeout(function() {
+        window.location.href = "index.html"; 
+      }, 3000);
+    });
+  </script>
+</body>
+</html>

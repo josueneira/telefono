@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Teléfonos Disponibles - Webroth</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+      color: #222;
+      padding: 40px 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #fff;
+      text-shadow: 2px 2px 6px #00000090;
+      margin-bottom: 40px;
+      font-size: 3rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .phone-card {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .phone-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 25px rgba(0,0,0,0.25);
+    }
+    .phone-image {
+      width: 100%;
+      height: 250px;
+      object-fit: contain;
+      background: #f0f0f0;
+      padding: 15px;
+    }
+    .phone-info {
+padding: 15px 20px;
+      text-align: center;
+    }
+    .phone-info h2 {
+      margin: 0 0 10px;
+      font-size: 1.5rem;
+      color: #333;
+    }
+    .phone-info p {
+      margin: 0;
+      color: #666;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+    @media (max-width: 480px) {
+      body {
+        padding: 20px 10px;
+      }
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 25px;
+      }
+      .phone-image {
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Teléfonos Disponibles</h1>
+
+    <div class="ofertas">
+    <div class="oferta-card">
+      <img src="img\s21.jpg" class="oferta-img" alt="Teléfono 1">
+      <div class="oferta-info">
+        <h2>Galaxy S21</h2>
+        <p>Antes 799 - Ahora599</p>
+        
+      </div>
+ 
+    </div>
+    <div class="phone-card">
+      <img src="img\iphone_11.jpg" alt="Teléfono 1" class="phone-image" />
+      <div class="phone-info">
+        <h2>Modelo iphone_11</h2>
+        <p>399</p>
+      </div>
+    </div>
+    <div class="phone-card">
+      <img src="img\iphone-12-pro.jpg" alt="Teléfono 2" class="phone-image" />
+      <div class="phone-info">
+        <h2>Modelo iphone-12-pro</h2>
+        <p>$499</p>
+      </div>
+    </div>
+    <div class="phone-card">
+      <img src="img\13.jpg" alt="Teléfono 3" class="phone-image" />
+      <div class="phone-info">
+        <h2>Modelo iphone 13</h2>
+        <p>599</p>
+   <a href="index.html">Inicio</a>
+   
+    </div>
+    </div>
+  </div>
+
+</body>
+</html>

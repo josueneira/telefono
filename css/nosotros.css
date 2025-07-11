@@ -1,0 +1,109 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f0f4f8;
+  color: #333;
+}
+
+header {
+  background: #005eff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 1.8em;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 30px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.nosotros {
+  background: #fff;
+  padding: 20px;
+  border-left: 5px solid #005eff;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.nosotros h2 {
+  color: #005eff;
+  margin-bottom: 10px;
+}
+
+.mision-vision {
+  background: #e0f0ff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.mision-vision h3 {
+  color: #003d99;
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #005eff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background: #0041cc;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #003580;
+  color: white;
+  margin-top: 40px;
+}
+
+/* Diseño responsivo */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  main {
+    padding: 20px 10px;
+  }
+}
