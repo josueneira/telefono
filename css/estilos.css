@@ -14,16 +14,25 @@ h3,
 h4,
 h5,
 h6 {
-    color: #1d273b;
+    color: #000000;
     font-weight: 300;
+ font-size: 2em;         /* Aumenta el tamaño */
+  font-family: 'Arial', sans-serif; /* Cambia la fuente */
+  font-weight: bold;      /* Lo hace en negrita */
+  text-align: center;     /* Centra el texto */
+  text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
 }
 
+
+
+    
 .contenedor {
     width: 90%;
     max-width: 1500px;
     margin: auto;
     overflow: hidden;
 }
+
 
 
 
@@ -76,7 +85,7 @@ nav {
 }
 
 .nav .enlaces-header a {
-    color: #12087e;
+    color: #1601fe;
     text-decoration: none;
     margin-left: 20px;
 }
@@ -97,7 +106,7 @@ nav {
 }
 
 .contenido-header {
-    background-color: #12087e;
+    background-color: #1708b9;
     width: 100%;
     height: 400px;
     display: flex;
@@ -121,12 +130,13 @@ nav {
 
 .textos-header {
     margin: 0 0 0 30px;
+    
 }
 
 .contenido-header p {
     font-weight: 100;
     margin-top: 14px;
-    color: #080808;
+    color: #ffffff;
 }
 
 .contenido-header a {
