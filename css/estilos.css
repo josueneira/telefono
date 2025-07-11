@@ -8,7 +8,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 .textos-header h1 {
-  color: white; /* Cambia 'white' por el color que quieras */
+  color: white; 
   font-size: 2.5em;
   font-family: 'Arial', sans-serif;
   font-weight: bold;
@@ -24,10 +24,10 @@ h5,
 h6 {
     color: #000000;
     font-weight: 300;
- font-size: 2em;         /* Aumenta el tamaño */
-  font-family: 'Arial', sans-serif; /* Cambia la fuente */
-  font-weight: bold;      /* Lo hace en negrita */
-  text-align: center;     /* Centra el texto */
+ font-size: 2em;         
+  font-family: 'Arial', sans-serif; 
+  font-weight: bold;      
+  text-align: center;   
   text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
 }
 
